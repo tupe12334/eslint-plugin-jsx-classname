@@ -1,5 +1,5 @@
-import { TAILWIND_REGEX } from './tailwind-regex.js'
+import { twMerge } from 'tailwind-merge'
 
 export function isTailwindClass(className: string): boolean {
-  return TAILWIND_REGEX.test(className)
+  return twMerge(className + ' ' + className) === className
 }
