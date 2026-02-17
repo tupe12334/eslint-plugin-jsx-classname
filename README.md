@@ -44,10 +44,11 @@ Requires `className` attribute on HTML elements in JSX and TSX files.
 
 #### Options
 
-| Option            | Type       | Description                                                                |
-| ----------------- | ---------- | -------------------------------------------------------------------------- |
-| `elements`        | `string[]` | Only check these HTML elements. If not set, all HTML elements are checked. |
-| `excludeElements` | `string[]` | Exclude these HTML elements from the check.                                |
+| Option            | Type       | Description                                                                                        |
+| ----------------- | ---------- | -------------------------------------------------------------------------------------------------- |
+| `elements`        | `string[]` | Only check these HTML elements. If not set, all HTML elements are checked.                         |
+| `excludeElements` | `string[]` | Exclude these HTML elements from the check.                                                        |
+| `ignoreTailwind`  | `boolean`  | When `true`, Tailwind CSS utility classes are not counted as satisfying the className requirement. |
 
 #### Examples
 
@@ -77,6 +78,22 @@ rules: {
 rules: {
   'jsx-classname/require-classname': ['warn', { excludeElements: ['hr', 'br', 'input'] }]
 }
+```
+
+**With `ignoreTailwind` option** (require non-Tailwind class names):
+
+```javascript
+rules: {
+  'jsx-classname/require-classname': ['warn', { ignoreTailwind: true }]
+}
+```
+
+```jsx
+// Valid — has a custom class alongside Tailwind utilities
+<div className="flex p-4 my-wrapper">content</div>
+
+// Invalid — only Tailwind utility classes
+<div className="flex items-center p-4">content</div>
 ```
 
 ## Development
