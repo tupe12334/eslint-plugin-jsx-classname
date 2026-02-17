@@ -11,7 +11,9 @@
     "tsconfig",
     "esbenp",
     "classname",
-    "commitlint"
+    "commitlint",
+    "tailwind",
+    "flexbox"
   ],
   "languageSettings": [
     {
