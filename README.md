@@ -21,7 +21,29 @@ pnpm add -D eslint-plugin-jsx-classname
 
 ## Usage
 
-Add the plugin to your ESLint flat config:
+### Recommended config
+
+Enables all rules as warnings:
+
+```javascript
+import jsxClassname from 'eslint-plugin-jsx-classname'
+
+export default [jsxClassname.configs.recommended]
+```
+
+### Strict config
+
+Enables all rules as errors and requires non-Tailwind class names (Tailwind-only classes don't satisfy the requirement):
+
+```javascript
+import jsxClassname from 'eslint-plugin-jsx-classname'
+
+export default [jsxClassname.configs.strict]
+```
+
+### Manual setup
+
+For full control over which rules are enabled and their severity:
 
 ```javascript
 import jsxClassname from 'eslint-plugin-jsx-classname'
