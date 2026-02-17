@@ -10,7 +10,10 @@
       "Bash(git push:*)",
       "Bash(gh run list:*)",
       "Bash(gh run watch:*)",
-      "Bash(gh run view:*)"
+      "Bash(gh run view:*)",
+      "Bash(pnpm build:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_close"
     ]
   }
 }
