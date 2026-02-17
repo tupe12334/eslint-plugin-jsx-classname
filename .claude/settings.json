@@ -4,7 +4,10 @@
       "Bash(gh repo view:*)",
       "Bash(command -v:*)",
       "Bash(pnpm release:*)",
-      "Bash(npm whoami:*)"
+      "Bash(npm whoami:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ]
   }
 }
