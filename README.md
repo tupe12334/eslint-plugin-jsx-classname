@@ -151,6 +151,10 @@ pnpm test
 | `pnpm spell`         | Check spelling                     |
 | `pnpm knip`          | Find unused files and dependencies |
 
+## Related projects
+
+- [moadim](https://moadim.io/) — loop engineering: build, schedule & run agent loops.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
