@@ -2,7 +2,7 @@
   "$schema": "https://unpkg.com/knip@latest/schema.json",
   "project": ["src/**/*.ts"],
   "ignore": ["**/*.spec.ts", "**/*.test.ts", "dist/**", "coverage/**"],
-  "ignoreDependencies": ["@cspell/dict-he"],
+  "ignoreDependencies": ["@cspell/dict-he", "block-no-verify"],
   "ignoreExportsUsedInFile": true,
   "ignoreWorkspaces": []
 }
